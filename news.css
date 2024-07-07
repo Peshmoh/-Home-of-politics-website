@@ -1,0 +1,216 @@
+/* Reset CSS */
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #007bff;
+  }
+  
+  header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 1px 0;
+    height: 100px;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+    background-color: none;
+    color: white;
+  }
+
+h2.article-title{ align-content:center;
+
+}
+  
+  nav {
+    background: linear-gradient(to right, blue, darkorange);
+    text-align: center;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 40px;
+  }
+  
+  nav a:hover {
+    background: linear-gradient(to right, rgb(0, 255, 42), darkorange);
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    border-color: none;
+    padding: 2px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  .sidebar-left,
+  .sidebar-right {
+    flex: 1;
+    padding: 20px;
+    background-color: #dde1e69d;
+  }
+  
+  .sidebar-left h4,
+  .sidebar-right h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  
+  .sidebar-left p,
+  .sidebar-right ul {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .sidebar-right ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar-right ul li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar-right ul li a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .sidebar-right ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    flex: 3;
+  }
+  
+  .hero-section {
+    text-align: center;
+    color: #1b1a1a;
+    padding: 80px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; /* Center the background image */
+    overflow: hidden; /* Hide any overflow */
+    position: relative; /* Needed for the absolute position of carousel */
+    z-index: 1; /* Add a higher z-index to bring the text to the front */
+  }
+  
+  /* Additional CSS for the image carousel */
+  .hero-section::before {
+    content: ''; /* Create a pseudo-element */
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%; /* Adjust the width based on the number of images (5 images in this case) */
+    height: 100%;
+    background: 
+      url(people.jpg), /* Add the first background image */
+      url(pic2.jpg), /* Add the second background image */
+      url(pic3.jpg), /* Add the third background image */
+      url(pic4.jpg), /* Add the fourth background image */
+      url(pic5.jpg); /* Add the fifth background image */
+    animation: slideBackgrounds 25s linear infinite; /* Use a linear animation for smooth sliding */
+    z-index: -1; /* Add a lower z-index to keep the pseudo-element behind the text */
+  }
+  
+  @keyframes slideBackgrounds {
+    0% {
+      left: 0; /* The initial position of the first background image */
+    }
+    100% {
+      left: -400%; /* The final position of the last background image (5 images * 100% width each) */
+    }
+  }
+  
+  
+  .news-section {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .news-item {
+    margin-bottom: 30px;
+  }
+  
+  .news-item img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  
+  .news-item h3 {
+    margin-top: 20px;
+    color: blue;
+    text-decoration: underline;
+  }
+  
+  .news-item p {
+    font-size: larger;
+    font-weight: bolder;
+    font-style: italic;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+  }
+  
+  .read-more-button {
+    background-color: hsl(194, 100%, 50%);
+    padding: 6px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin-top: 5px;
+  }
+  .cta-button{
+    background: linear-gradient(to right, rgb(0, 255, 42), darkorange);
+    color: #e21a1a;
+    text-decoration: none;
+    padding: 6px;
+    border-radius: 10px;
+    margin-top: 200px; /* Adjust the value to push the button down */
+
+}
+
+  
+  .article-content{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:small;
+    text-align: center;
+    border-radius: 50px;
+
+
+  }
+  /* Other styles remain the same */
+  
+  /* Center the footer */
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+  

@@ -1,0 +1,211 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;    
+    margin: 0;
+    padding: 0;
+    color: #007bff;
+
+    }
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 1px 0;
+    height: 100px;
+}
+
+.cta-button {
+    background: linear-gradient(to right, rgb(0, 255, 42), darkorange);
+    color:#d81414;
+    text-decoration: none;
+    padding: 6px;
+    border-radius: 10px;
+    margin-top: 200px; /* Adjust the value to push the button down */
+
+}
+
+
+.join-button {
+    background: linear-gradient(to right, rgb(0, 255, 42), darkorange);
+    padding: 2px 0px; /* Adjust the padding as needed (top/bottom, left/right) */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; /* This centers the button horizontally */
+    align-items: center; /* This centers the button vertically */
+    width: 90px; /* Set a specific width for the button */
+    margin: 0 auto; /* Add auto margins to center the button horizontally */
+}
+
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+    background-color: none;
+    color: white
+}
+
+h4{text-align: center;
+    font-weight: 100;
+
+}
+h2 {
+    text-align: center;
+    color: blue;
+    text-decoration: underline;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+p {
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    font-style: italic;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    flex-direction: row-reverse;
+    text-transform: initial;
+    margin-bottom: 10px; /* Adjust the margin value to reduce the space */
+}
+
+.par2{
+    background: linear-gradient(to right, blue, darkorange);
+color: whitesmoke; font-family: candara;
+font-style: italic;
+text-align: center;}
+
+ul {
+    text-align: center;
+}
+
+header p {
+    margin: 0 auto;
+    max-width: 600px;
+    font-size: 17px;
+}
+
+nav { background: linear-gradient(to right, blue, darkorange);
+    background-color: #274d74;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 40px;
+}
+
+
+nav a:hover {
+    background: linear-gradient(to right, rgb(0, 255, 42), darkorange);;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    border-color: none;
+    padding: 2px;
+}
+
+.hero-section {
+    text-align: center;
+    color: #1b1a1a;
+    padding: 80px 0;
+    animation: shrinkInOut 8s infinite alternate, slideToLeft 25s infinite;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Same CSS styles as before */
+
+.news-section {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .news-item {
+    margin-bottom: 30px;
+  }
+  
+  .news-item img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  
+  .news-item h3 {
+    margin-top: 20px;
+    color: blue;
+    text-decoration: underline;
+  }
+  
+  .news-item p {
+    font-size: larger;
+    font-weight: bolder;
+    font-style: italic;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+  }
+  
+  .read-more-button {
+    background-color: hsl(194, 100%, 50%);
+    padding: 6px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin-top: 5px;
+  }
+  
+@keyframes shrinkInOut {
+    0% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(0.95);
+    }
+}
+
+@keyframes slideToLeft {
+    0% {
+        background-image: url(raoruto.jpg);
+        background-position: right center;
+    }
+    20% {
+        background-image: url(pic1.jpg);
+        background-position: right center;
+    }
+    40% {
+        background-image: url(pic4.jpg);
+        background-position: right center;
+    }
+    60% {
+        background-image: url(pic6.jpg);
+        background-position: right center;
+    }
+    80% {
+        background-image: url(pic2.jpg);
+        background-position: right center;
+    }
+    100% {
+        background-image: url(10.jpg); /* Go back to the first image to create a continuous loop */
+        background-position: right center;
+    }
+}
+
+/* Rest of the CSS styles remain the same */
+
+/* Center the footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #007bff;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
